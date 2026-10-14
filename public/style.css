@@ -1,0 +1,80 @@
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #6fae5a;
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  touch-action: none;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+canvas {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  height: 100dvh;
+}
+
+.overlay {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(40, 70, 35, 0.45);
+  padding: 16px;
+}
+
+.overlay[hidden] { display: none; }
+
+.card {
+  background: #fffaf0;
+  border-radius: 16px;
+  padding: 28px 24px;
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h1 { margin: 0; font-size: 24px; color: #3d5a2a; }
+.card p { margin: 0; color: #6b6b5a; }
+.card small { color: #8a8a78; }
+
+.card input {
+  font-size: 18px;
+  padding: 10px 12px;
+  border: 2px solid #c9c2a8;
+  border-radius: 10px;
+  text-align: center;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.card button {
+  font-size: 17px;
+  padding: 11px;
+  border: none;
+  border-radius: 10px;
+  background: #e8594f;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#hud {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  background: rgba(255, 250, 240, 0.85);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 14px;
+  color: #3d5a2a;
+}

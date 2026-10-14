@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>バーチャルパーク</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <canvas id="park"></canvas>
+
+  <div id="hud" hidden>
+    <span id="count"></span>
+  </div>
+
+  <div id="join" class="overlay">
+    <form id="join-form" class="card">
+      <h1>バーチャルパーク</h1>
+      <p>遊びが生まれる公園</p>
+      <input id="name" maxlength="12" placeholder="なまえ" autocomplete="off" autofocus>
+      <button type="submit">公園に入る</button>
+      <small>移動：WASD / 矢印キー / 画面をドラッグ</small>
+    </form>
+  </div>
+
+  <div id="message" class="overlay" hidden>
+    <div class="card">
+      <p id="message-text"></p>
+      <button onclick="location.reload()">もう一度入る</button>
+    </div>
+  </div>
+
+  <script type="module" src="/client.js"></script>
+</body>
+</html>

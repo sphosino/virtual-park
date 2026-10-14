@@ -1,0 +1,17 @@
+{
+  "name": "virtual-park",
+  "version": "0.0.1",
+  "private": true,
+  "description": "遊びが生まれる場所 — オンラインの公園",
+  "type": "module",
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node test/smoke.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "ws": "^8.18.0"
+  }
+}
